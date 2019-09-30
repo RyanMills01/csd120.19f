@@ -1,10 +1,10 @@
-body{background-color: #2F2FA2;}
-h1{color: #99738E;}
-h2{color: red;}
-a{color: pink;}
-nav a{color: purple;}
-.byline{color: blue;}
-#page-copyright{color: green;}
-.haiku h2{color: white;}
-section p .byline{background-color: cyan;}
-.haiku em{color: orange;}
+body{background-color: #92140C;}
+h1{color: #BE5A38;}
+h2{color: #C1B4AE;}
+a{color: #BE7C4D;}
+nav a{color: #353238;}
+.byline{color: rgb(190,124,77,0.5);}
+#page-copyright{color: #C1B4AE;}
+.haiku h2{color: #353238;}
+section p .byline{background-color: #C1B4AE;}
+.haiku em{color: #BE5A38;}
