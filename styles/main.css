@@ -1,0 +1,10 @@
+body{background-color: #2F2FA2;}
+h1{color: #99738E;}
+h2{color: red;}
+a{color: pink;}
+nav a{color: purple;}
+.byline{color: blue;}
+#page-copyright{color: green;}
+.haiku h2{color: white;}
+section p .byline{background-color: cyan;}
+.haiku em{color: orange;}
