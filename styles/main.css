@@ -1,10 +1,8 @@
-body{background-color: #92140C;}
-h1{color: #BE5A38;}
-h2{color: #C1B4AE;}
-a{color: #BE7C4D;}
-nav a{color: #353238;}
-.byline{color: rgb(190,124,77,0.5);}
-#page-copyright{color: #C1B4AE;}
-.haiku h2{color: #353238;}
-section p .byline{background-color: #C1B4AE;}
-.haiku em{color: #BE5A38;}
+body{background-color: #5CDB95;}
+h1{color: #EDF5E1;}
+h2{color: #EDF5E1;}
+a{color: #379683;}
+nav a{color: #05386B;}
+.byline{color: rgb(5,56,107,0.5);}
+#page-copyright{color: #05386B;}
+.haiku em{color: #379683;}
