@@ -3,10 +3,15 @@ h1 {
     color: #EDF5E1;
     background-image: url(../images/gradient.png);
     background-repeat: repeat-x;
+    font-family: 'Lora', serif;
 }
-h2 {color: #EDF5E1;}
+h2 {color: #EDF5E1;
+    font-family: 'Merriweather', serif;
+}
 a {color: #379683;}
 nav a {color: #05386B;}
 .byline {color: rgba(5,56,107,0.5);}
 #page-copyright {color: #05386B;}
 .haiku em {color: #379683;}
+
+
