@@ -1,4 +1,5 @@
-body {background-color: #5CDB95;}
+body {background-color: #5CDB95;
+    font-family: 'Lora', serif;}
 h1 {
     color: #EDF5E1;
     background-image: url(../images/gradient.png);
@@ -7,11 +8,22 @@ h1 {
 }
 h2 {color: #EDF5E1;
     font-family: 'Merriweather', serif;
+    background-image: url(../images/gradient.png);
+    background-repeat: repeat-x;
 }
-a {color: #379683;}
-nav a {color: #05386B;}
-.byline {color: rgba(5,56,107,0.5);}
-#page-copyright {color: #05386B;}
+a {color: #379683;
+    text-decoration: none;}
+nav a {color: #05386B;
+        list-style-type: none;}
+.byline {color: rgba(5,56,107,0.5);
+        font-size: 70%}
+#page-copyright {color: #05386B;
+                text-transform: uppercase;
+                letter-spacing: 3px;}
 .haiku em {color: #379683;}
+.bio p {text-indent: 3em;}
+footer {text-align: center;
+        font-size: 12px;}
+ul {list-style-type: upper-alpha;}
 
 
