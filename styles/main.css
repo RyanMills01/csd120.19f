@@ -11,21 +11,17 @@ body {
 }
 h1 {
     color: #EDF5E1;
-    background-image: url(../images/gradient.png);
-    background-repeat: repeat-x;
     font-family: 'Lora', serif;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     background: rgb(92,219,149);
     background: linear-gradient(90deg, rgba(92,219,149,1) 13%, rgba(55,150,69,1) 54%, rgba(255,255,255,1) 100%);
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
-    
+
 }
 h2 {
     color: #EDF5E1;
     font-family: 'Merriweather', serif;
-    background-image: url(../images/gradient.png);
-    background-repeat: repeat-x;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     background: rgb(92,219,149);
     background: linear-gradient(90deg, rgba(92,219,149,1) 13%, rgba(55,150,69,1) 54%, rgba(255,255,255,1) 100%);
@@ -61,6 +57,18 @@ footer {
     text-align: center;
     font-size: 12px;
     margin-bottom: 2em;
+}
+footer hr {
+    width: 50vw;
+    min-width: 300px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border-top: 3px solid #000000;
+    border-bottom: 8px dotted #000000;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-right: 0;
+    border-left: 0;
 }
 ul {
     list-style-type: upper-alpha;
