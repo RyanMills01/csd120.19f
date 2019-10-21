@@ -1,3 +1,10 @@
+h3, h4, h5, h6 {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    background: rgb(92,219,149);
+    background: linear-gradient(90deg, rgba(92,219,149,1) 13%, rgba(55,150,69,1) 54%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
 body {
     background-color: #5CDB95;
     font-family: 'Lora', serif;
@@ -7,12 +14,23 @@ h1 {
     background-image: url(../images/gradient.png);
     background-repeat: repeat-x;
     font-family: 'Lora', serif;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    background: rgb(92,219,149);
+    background: linear-gradient(90deg, rgba(92,219,149,1) 13%, rgba(55,150,69,1) 54%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    
 }
 h2 {
     color: #EDF5E1;
     font-family: 'Merriweather', serif;
     background-image: url(../images/gradient.png);
     background-repeat: repeat-x;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    background: rgb(92,219,149);
+    background: linear-gradient(90deg, rgba(92,219,149,1) 13%, rgba(55,150,69,1) 54%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
 a {
     color: #379683;
@@ -62,8 +80,13 @@ ul {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);  
     background-color: #379645;
-    box-shadow:0px 0px 4px rgb(0,0,0);
+    box-shadow:0px 0px 4px rgba(0,0,0,0.2);
 }
+
+figure img{
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
 
 
 
