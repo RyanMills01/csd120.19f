@@ -3,30 +3,30 @@ h3, h4, h5, h6 {
     background: rgb(92,219,149);
     background: linear-gradient(90deg, rgba(92,219,149,1) 13%, rgba(55,150,69,1) 54%, rgba(255,255,255,1) 100%);
     -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
+    background-clip: text; 
 }
 body {
     background-color: #5CDB95;
     font-family: 'Lora', serif;
 }
 h1 {
-    color: #EDF5E1;
+    color: transparent;
     font-family: 'Lora', serif;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     background: rgb(92,219,149);
     background: linear-gradient(90deg, rgba(92,219,149,1) 13%, rgba(55,150,69,1) 54%, rgba(255,255,255,1) 100%);
     -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
 
 }
 h2 {
-    color: #EDF5E1;
+    color: transparent;
     font-family: 'Merriweather', serif;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     background: rgb(92,219,149);
     background: linear-gradient(90deg, rgba(92,219,149,1) 13%, rgba(55,150,69,1) 54%, rgba(255,255,255,1) 100%);
     -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 a {
     color: #379683;
@@ -37,6 +37,8 @@ nav a {
 }
 nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 .byline {
     color: rgba(5,56,107,0.5);
@@ -72,8 +74,6 @@ footer hr {
 }
 ul {
     list-style-type: upper-alpha;
-    margin: 0;
-    padding: 0;
 }
 
 .width-wrap {
