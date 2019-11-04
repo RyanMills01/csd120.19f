@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 h3, h4, h5, h6 {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     background: rgb(92,219,149);
@@ -32,14 +36,39 @@ a {
     color: #379683;
     text-decoration: none;
 }
+
 nav a {
     color: #05386B;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-right: 1em;
+    margin-left: 1em;
+    display: block;
+    border-top: 4px solid transparent;
 }
+
+nav a:hover {
+    border-top: 4px solid rgb(0,0,0);
+}
+
+nav {
+    margin-left: 2em;
+    margin-right: 2em;
+    border-bottom: 1px dotted rgba(0,0,0,0.3);
+    margin-top: -4px;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    float: right;
 }
+
+nav li{
+    float: left;
+}
+
 .byline {
     color: rgba(5,56,107,0.5);
     font-size: 70%
@@ -91,10 +120,34 @@ ul {
     box-shadow:0px 0px 4px rgba(0,0,0,0.2);
 }
 
-figure img{
+figure{
     box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    float: right;
+    position: relative;
+    top: -1em;
 }
 
+.paperclip{
+    background-image: url(../images/paperclip.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    position: absolute;
+    top: -10px;
+    right: 7px;
+}
 
+.fav {
+    clear: right;
+}
+
+header {
+    border-top: 4px solid rgba(0, 0, 0, 0.1); ;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1); ;
+    border-left: 4px solid rgba(0, 0, 0, 0.1); ;
+    border-right: 4px solid rgba(0, 0, 0, 0.1); ;
+    margin-left: -2em;
+    margin-right: -2em;
+}
 
 
