@@ -157,3 +157,8 @@ header {
 .back-to-top:hover{
     opacity: 1;
 }
+
+.back-to-top a {
+    position: fixed;
+    bottom: 3.5em;
+}
