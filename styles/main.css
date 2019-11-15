@@ -9,10 +9,14 @@ h3, h4, h5, h6 {
     -webkit-background-clip: text; 
     background-clip: text; 
 }
+
 body {
     background-color: #5CDB95;
     font-family: 'Lora', serif;
+    min-height: 100vh;
+    display: flex;
 }
+
 h1 {
     color: transparent;
     font-family: 'Lora', serif;
@@ -21,8 +25,8 @@ h1 {
     background: linear-gradient(90deg, rgba(92,219,149,1) 13%, rgba(55,150,69,1) 54%, rgba(255,255,255,1) 100%);
     -webkit-background-clip: text; 
     background-clip: text;
-
 }
+
 h2 {
     color: transparent;
     font-family: 'Merriweather', serif;
@@ -32,6 +36,7 @@ h2 {
     -webkit-background-clip: text; 
     background-clip: text;
 }
+
 a {
     color: #379683;
     text-decoration: none;
@@ -63,33 +68,44 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    float: right;
+    display: flex;
+    justify-content: center;
 }
 
 nav li{
-    float: left;
 }
 
 .byline {
     color: rgba(5,56,107,0.5);
     font-size: 70%
 }
+
 #page-copyright {
     color: #05386B;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
+
 .haiku em {
     color: #379683;
 }
+
 .bio p {
     text-indent: 3em;
+    
 }
+
+.bio {
+    grid-column-end: span 2;
+}
+
 footer {
     text-align: center;
     font-size: 12px;
     margin-bottom: 2em;
+    margin-top: auto;
 }
+
 footer hr {
     width: 50vw;
     min-width: 300px;
@@ -102,6 +118,7 @@ footer hr {
     border-right: 0;
     border-left: 0;
 }
+
 ul {
     list-style-type: upper-alpha;
 }
@@ -119,6 +136,8 @@ ul {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);  
     background-color: #379645;
     box-shadow:0px 0px 4px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
 }
 
 figure{
@@ -161,4 +180,19 @@ header {
 .back-to-top a {
     position: fixed;
     bottom: 3.5em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 2em;
+    
+}
+
+.glossary {
+    grid-column-end: span 2;
+}
+
+#useful-links {
+    grid-column-end: span 2;
 }
