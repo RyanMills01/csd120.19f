@@ -198,12 +198,16 @@ main {
 }
 
 .gallery {
+    min-width: 100%;
+    display: grid;
     grid-column-end: span 2;
-    grid-template-column: 25% 25% 25% 25%;
-    width: 100%;
-    
 }
 
-.gallery img {
+.gallery-thumbnails {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.gallery-thumbnails img{
     display: block;
 }
