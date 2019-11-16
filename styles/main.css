@@ -196,3 +196,14 @@ main {
 #useful-links {
     grid-column-end: span 2;
 }
+
+.gallery {
+    grid-column-end: span 2;
+    grid-template-column: 25% 25% 25% 25%;
+    width: 100%;
+    
+}
+
+.gallery img {
+    display: block;
+}
