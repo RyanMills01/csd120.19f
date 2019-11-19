@@ -234,6 +234,34 @@ img {
     }
     
     .mugshot {
-        
+        margin-left: none;
+        margin-right: none;
+
+    }
+
+    main {
+        display: block;
+    }
+
+    .row-span-2.col-span-2 {
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    nav a {
+        border: none;
+    }
+
+    nav a:hover {
+        border: none;
+        text-decoration: underline;
+    }
     }
 }
