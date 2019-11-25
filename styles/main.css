@@ -234,8 +234,9 @@ img {
     }
     
     .mugshot {
-        margin-left: none;
-        margin-right: none;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
 
     }
 
@@ -272,6 +273,7 @@ img {
         border-top: 5px solid black;
         margin-top: 1em;
         cursor: pointer;
+        position: relative;
     }
 
     .burger::before, .burger::after {
@@ -287,7 +289,7 @@ img {
     }
 
     .burger::after {
-        top: 27px;
+        top: 15px;
     }
     
     
