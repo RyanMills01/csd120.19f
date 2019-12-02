@@ -224,6 +224,36 @@ img {
     height: auto;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+td, th{
+    background: rgba(0,0,0,0.05);
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-left: 3px solid #379645;
+    border-right: 3px solid #379645;
+}
+
+th {
+    background-color: rgba(0,0,0,0.1);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(0,0,0,0.1);
+}
+
+tr:nth-child(7){
+    border-top: 3px solid #379645;
+}
+
+tr:nth-child(2){
+    border-top: 3px solid #379645;
+}
+
 @media screen and (max-width: 768px){
     footer hr{
         display: none;
