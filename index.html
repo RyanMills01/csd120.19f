@@ -27,7 +27,8 @@
         
         
         <nav>
-        <div class = "burger"></div>
+        <input type="checkbox" id="burger-toggle">
+        <label class = "burger" for="burger-toggle"></label>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="links.html">Links</a></li>
@@ -152,6 +153,44 @@
         </div>
     </section>
     
+    <section class = "survey">
+        <h2>Survey</h2>
+        <form
+            action="https://formspree.io/xyyzpdbj"
+            method="POST">
+            
+            <label>What is your name?<br><input type = "text" name="name_field" required></label>
+            
+            <label>What is your email?<br><input type = "text" name="email_field" required></label>
+            
+            <label>Which integer is best?<br><input type = "number" name="best_integer" id = "integer"></label>
+            
+            <label>Which day is best?<br><input type = "date" name="best_day" id = "integer"></label>
+            
+            <label>Which bear is best?</label>
+            <select>
+                <option value = ""></option>
+                <option value = "black">black</option>
+                <option value = "brown">brown</option>
+                <option value = "care">care</option>
+                <option value = "panda">panda</option>
+                <option value = "polar">polar</option>
+                <option value = "teddy">teddy</option>
+            </select>
+            
+            <label>Do you like radio buttons?</label>
+            <label for="yes">Yes</label>
+            <input type="radio" name="choice" id="yes" value="yes">
+            <label for="no">No</label>
+            <input type="radio" name="choice" id="no" value="no">
+            <label for="None%Of%Your%Business">None of your business</label>
+            <input type="radio" name="choice" id="none%of%your%business" value="?" checked="checked">
+            
+            <label>What is the meaning of life?</label>
+            <textarea rows="10" name = "life_meaning">Enter the correct answer here</textarea>
+            <button type = "submit" >SEND</button>
+        </form>
+    </section>
     </main>
     
     <footer>
