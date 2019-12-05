@@ -337,6 +337,7 @@ button {
         cursor: pointer;
         position: relative;
         display: block;
+        transition: ease-in-out 200ms;
     }
 
     .burger::before, .burger::after {
@@ -345,6 +346,7 @@ button {
         content:"";
         display:block;
         position: absolute;
+        transition: ease-in-out 200ms;
     }
 
     .burger::before {
@@ -356,8 +358,7 @@ button {
     }
 
     #burger-toggle:checked ~.burger::after {
-        transform: translate(0, 20px);
-        transform: rotate(-90deg);
+        transform: translate(0px, -20px) rotate(-90deg);
     }
 
     .burger::after {
@@ -369,8 +370,7 @@ button {
     }
     
     #burger-toggle:checked ~ .burger {
-        transform: translate(-5px, 10px);
-        transform: rotate(45deg);
+        transform: translate(-5px, 10px) rotate(45deg);
     }
     
     
