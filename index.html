@@ -8,23 +8,25 @@
     <link rel = "stylesheet" href = "styles/normalize.css">
     <link rel = "stylesheet" href = "styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Lora%7CMerriweather&display=swap" rel="stylesheet">
-    
+
     <link rel = "icon" href = "favicon.ico" type = "images/x-icon">
     <link rel = "apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel = "icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel = "icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel = "manifest" href="/site.webmanifest">
+    <script src="lightbox/baguetteBox.js"></script>
+    <link rel="stylesheet" href="lightbox/baguetteBox.css">
     <meta name = "msapplication-TileColor" content="#da532c">
     <meta name ="theme-color" content="#ffffff">
 </head>
 
 <body>
-         
+
 
     <div class = "width-wrap">
     <header id = "top">
-        
-        
+
+
         <nav>
         <input type="checkbox" id="burger-toggle">
         <label class = "burger" for="burger-toggle"></label>
@@ -35,12 +37,12 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
-    
+
     <section class = "bio">
         <h1>Welcome to Ryan's CSD120 Website</h1>
-        
+
         <figure class = "mugshot">
             <div class = "paperclip">
             </div>
@@ -49,34 +51,34 @@
                 Ryan laying on the ground after crashing his bike
             </figcaption>
         </figure>
-        
-        <p>I have learned HTML in the past in highschool, but its 
-        been well over 2 years now. I am a bit rusty, but im sure 
-        ill pick it up easily as we continiue through the course. 
+
+        <p>I have learned HTML in the past in highschool, but its
+        been well over 2 years now. I am a bit rusty, but im sure
+        ill pick it up easily as we continiue through the course.
         I also have some experience in Java, as well as Python.</p>
-        
-        <p>I own a cat named Mocha, who is a tortie. She is crazy 
-        and loves to wake me up at 3 am. I also have a ball python 
+
+        <p>I own a cat named Mocha, who is a tortie. She is crazy
+        and loves to wake me up at 3 am. I also have a ball python
         named Jeffery who is being taken care of by someone else
         while im in college.</p>
     </section>
-    
+
     <section class = "fav">
         <h2>My Three Favourite Foods</h2>
-        
+
         <ol>
             <li>Sushi</li>
             <li>Salmon</li>
             <li>Steak</li>
         </ol>
     </section>
-        
+
     <section class = "haiku">
         <h2>Haiku</h2>
-        
+
         <p><span style = "background-color: #379683">A summer river being crossed<br>how pleasing<br>with sandals in my hands!</span><br><em>By <span class = "byline"><b>Yosa Buson</b></span></em></p>
     </section>
-    
+
     <section class="courses">
         <h2> MY Sault College Courses</h2>
             <table>
@@ -106,7 +108,7 @@
                     <td>TNY130</td>
                     <td>Technology in Society
                 </tr>
-                               
+
                 <tr>
                     <td rowspan="5">Winter</td>
                     <td>CSA103</td>
@@ -130,7 +132,7 @@
                 </tr>
             </table>
     </section>
-    
+
     <section class = "gallery">
         <h2>Photo Gallery</h2>
         <div class = "gallery-thumbnails">
@@ -152,21 +154,21 @@
             <a href="https://picsum.photos/id/10/1024"><img src="https://picsum.photos/id/25/300" alt="Placeholder Image"></a>
         </div>
     </section>
-    
+
     <section class = "survey">
         <h2>Survey</h2>
         <form
             action="https://formspree.io/xyyzpdbj"
             method="POST">
-            
+
             <label>What is your name?<br><input type = "text" name="name_field" required></label>
-            
+
             <label>What is your email?<br><input type = "text" name="email_field" required></label>
-            
+
             <label>Which integer is best?<br><input type = "number" name="best_integer" id = "integer"></label>
-            
+
             <label>Which day is best?<br><input type = "date" name="best_day" id = "day"></label>
-            
+
             <label>Which bear is best?</label>
                 <select>
                     <option value = " "> </option>
@@ -177,7 +179,7 @@
                     <option value = "polar">polar</option>
                     <option value = "teddy">teddy</option>
                 </select>
-            
+
             <label>Do you like radio buttons?</label>
             <label for="yes">Yes</label>
             <input type="radio" name="choice" id="yes" value="yes">
@@ -185,14 +187,14 @@
             <input type="radio" name="choice" id="no" value="no">
             <label for="None%Of%Your%Business">None of your business</label>
             <input type="radio" name="choice" id="none%of%your%business" value="?" checked="checked">
-            
+
             <label>What is the meaning of life?</label>
             <textarea rows="10" name = "life_meaning">Enter the correct answer here</textarea>
             <button type = "submit" >SEND</button>
         </form>
     </section>
     </main>
-    
+
     <footer>
         <hr>
             <blockquote>
@@ -206,5 +208,10 @@
     <a href = "#top">◤</a>
     </div>
     </div>
+    <script>
+        baguetteBox.run('.gallery-thumbnails', {
+        filter: /picsum\.photos\/id/i
+        });
+    </script>
 </body>
 </html>
