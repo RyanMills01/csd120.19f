@@ -230,10 +230,10 @@ table {
 
 td, th{
     background: rgba(0,0,0,0.05);
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-    margin-left: 1em;
-    margin-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
     border-left: 3px solid #379645;
     border-right: 3px solid #379645;
 }
@@ -242,7 +242,7 @@ th {
     background-color: rgba(0,0,0,0.1);
 }
 
-tr:nth-child(odd) {
+tr:nth-child(odd) td {
     background-color: rgba(0,0,0,0.1);
 }
 
@@ -270,7 +270,7 @@ label {
 button {
     margin-top: 1em;
     justify-self: end;
-    font: 24px;
+    font-size: 24px;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 2em;

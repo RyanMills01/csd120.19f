@@ -88,7 +88,7 @@
                     <th>Course Name</th>
                 </tr>
                 <tr>
-                    <td rowspan="5" >Fall</td>
+                    <th rowspan="5" >Fall</th>
                     <td>CSD105</td>
                     <td>Python</td>
                 </tr>
@@ -110,7 +110,7 @@
                 </tr>
 
                 <tr>
-                    <td rowspan="5">Winter</td>
+                    <th rowspan="5">Winter</th>
                     <td>CSA103</td>
                     <td>Business Applications</td>
                 </tr>
@@ -161,36 +161,46 @@
             action="https://formspree.io/xyyzpdbj"
             method="POST">
 
-            <label>What is your name?<br><input type = "text" name="name_field" required></label>
+            <label for="name">What is your name?</label>
+            <input type = "text" name="name_field" id="name" required>
 
-            <label>What is your email?<br><input type = "text" name="email_field" required></label>
+            <label for="email">What is your email?</label>
+            <input type="email" name="email_field" id="email" required>
 
-            <label>Which integer is best?<br><input type = "number" name="best_integer" id = "integer"></label>
+            <label for="integer">Which integer is best?</label>
+            <input type="number" name="best_integer" id="integer">
 
-            <label>Which day is best?<br><input type = "date" name="best_day" id = "day"></label>
+            <label for="day">Which day is best?</label>
+            <input type="date" name="best_day" id="day">
 
-            <label>Which bear is best?</label>
-                <select>
-                    <option value = " "> </option>
-                    <option value = "black">black</option>
-                    <option value = "brown">brown</option>
-                    <option value = "care">care</option>
-                    <option value = "panda">panda</option>
-                    <option value = "polar">polar</option>
-                    <option value = "teddy">teddy</option>
-                </select>
+            <label for="bear">Which bear is best?</label>
+            <select name="best_bear" id="bear">
+                <option value = " "> </option>
+                <option value = "black">black</option>
+                <option value = "brown">brown</option>
+                <option value = "care">care</option>
+                <option value = "panda">panda</option>
+                <option value = "polar">polar</option>
+                <option value = "teddy">teddy</option>
+            </select>
 
             <label>Do you like radio buttons?</label>
-            <label for="yes">Yes</label>
-            <input type="radio" name="choice" id="yes" value="yes">
-            <label for="no">No</label>
-            <input type="radio" name="choice" id="no" value="no">
-            <label for="None%Of%Your%Business">None of your business</label>
-            <input type="radio" name="choice" id="none%of%your%business" value="?" checked="checked">
+            <label>
+                <input type="radio" name="choice" value="yes">
+                Yes
+            </label>
+            <label>
+                <input type="radio" name="choice" value="no">
+                No
+            </label>
+            <label>
+                <input type="radio" name="choice" id="none%of%your%business" value="?" checked="checked">
+                None of your business
+            </label>
 
-            <label>What is the meaning of life?</label>
-            <textarea rows="10" name = "life_meaning">Enter the correct answer here</textarea>
-            <button type = "submit" >SEND</button>
+            <label for="life">What is the meaning of life?</label>
+            <textarea rows="10" name="life_meaning" id="life" placeholder="Enter the correct answer here"></textarea>
+            <button type="submit">SEND</button>
         </form>
     </section>
     </main>
